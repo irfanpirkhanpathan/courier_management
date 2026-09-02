@@ -1,0 +1,17 @@
+{
+  "name": "courier-service-management",
+  "version": "1.0.0",
+  "description": "Courier Service Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}

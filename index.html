@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courier Service Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>📦 Courier Service Management</h1>
+        <p>Fast, Safe and Reliable Courier Service</p>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="home">
+
+        <h2>Welcome to Courier Service</h2>
+
+        <p>
+            Book your courier, track your package and manage payments easily.
+        </p>
+
+        <button onclick="showBooking()">
+            Book Courier
+        </button>
+
+    </section>
+
+
+    <!-- ADD COURIER FORM -->
+    <section id="booking">
+
+        <h2>🚚 Add Courier</h2>
+
+        <form id="courierForm">
+
+            <!-- Customer Name -->
+            <label for="customerName">
+                Customer Name
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                name="customerName"
+                placeholder="Enter customer name"
+                required
+            >
+
+
+            <!-- Phone -->
+            <label for="phone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+                required
+            >
+
+
+            <!-- Pickup -->
+            <label for="pickup">
+                Pickup Location
+            </label>
+
+            <input
+                type="text"
+                id="pickup"
+                name="pickup"
+                placeholder="Enter pickup location"
+                required
+            >
+
+
+            <!-- Delivery -->
+            <label for="delivery">
+                Delivery Location
+            </label>
+
+            <input
+                type="text"
+                id="delivery"
+                name="delivery"
+                placeholder="Enter delivery location"
+                required
+            >
+
+
+            <!-- Weight -->
+            <label for="weight">
+                Package Weight (kg)
+            </label>
+
+            <input
+                type="number"
+                id="weight"
+                name="weight"
+                placeholder="Enter package weight"
+                step="0.1"
+                min="0.1"
+                required
+            >
+
+
+            <!-- Submit Button -->
+            <button type="submit">
+                Add Courier
+            </button>
+
+        </form>
+
+
+        <!-- SUCCESS / ERROR MESSAGE -->
+        <div id="bookingMessage"></div>
+
+    </section>
+
+
+    <!-- TRACK COURIER -->
+    <section id="tracking">
+
+        <h2>🔍 Track Courier</h2>
+
+        <form id="trackingForm">
+
+            <label for="trackingId">
+                Tracking ID
+            </label>
+
+            <input
+                type="text"
+                id="trackingId"
+                placeholder="Example: TR1234"
+                required
+            >
+
+            <button type="submit">
+                Track Courier
+            </button>
+
+        </form>
+
+        <div id="trackingResult"></div>
+
+    </section>
+
+
+    <!-- PAYMENT -->
+    <!-- PAYMENT -->
+<section id="payment">
+
+    <h2>💳 Payment</h2>
+
+    <form id="paymentForm">
+
+        <!-- Tracking ID -->
+        <label for="paymentTrackingId">
+            Tracking ID
+        </label>
+
+        <input
+            type="text"
+            id="paymentTrackingId"
+            placeholder="Enter tracking ID"
+            required
+        >
+
+
+        <!-- Amount -->
+        <label for="amount">
+            Amount
+        </label>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            min="1"
+            required
+        >
+
+
+        <!-- Payment Method -->
+        <label for="paymentMethod">
+            Payment Method
+        </label>
+
+        <select id="paymentMethod" required>
+
+            <option value="">
+                -- Select Payment Method --
+            </option>
+
+            <option value="UPI">
+                UPI
+            </option>
+
+            <option value="Google Pay">
+                Google Pay (GPay)
+            </option>
+
+            <option value="BHIM">
+                BHIM UPI
+            </option>
+
+            <option value="PhonePe">
+                PhonePe
+            </option>
+
+            <option value="Paytm">
+                Paytm
+            </option>
+
+            <option value="Bank Transfer">
+                Bank Transfer
+            </option>
+
+            <option value="Debit Card">
+                Debit Card
+            </option>
+
+            <option value="Credit Card">
+                Credit Card
+            </option>
+
+            <option value="Cash on Delivery">
+                Cash on Delivery
+            </option>
+
+        </select>
+
+
+        <!-- Pay Button -->
+        <button type="submit">
+            💳 Pay Now
+        </button>
+
+    </form>
+
+
+    <!-- Payment Result -->
+    <div id="paymentMessage"></div>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Courier Service Management
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+        <div id="result"></div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
